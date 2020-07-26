@@ -2816,7 +2816,7 @@ void MainScreenPrint()
   display.setCursor(3,11);
   display.print("Battery:");
   display.setCursor(90,11); 
-  float vin = (analogRead(A0)*0.02142)+2.4;
+  float vin = (analogRead(A0)*0.025)+0;
   display.print(vin, 1);display.print("V");
   //Throttle-------------------------
   display.setCursor(3,34);
